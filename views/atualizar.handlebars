@@ -1,0 +1,11 @@
+<form name = 'eventForm' action="/controllerUpdate" method="post">
+    <input type='hidden' name='id' id='id' placeholder='Id:' value='{{id}}'><br>
+    <label for="descricao">Descrição:</label><br>
+    <input type="text" id="descricao" name="descricao" value='{{desc}}'><br>
+    <label for="inicio">Data e horário de Inicio:</label>
+    <input type="datetime-local" id="inicio" name="inicio" value='{{inicio}}'><br>
+    <label for="termino">Data e horário de término:</label>
+    <input type="datetime-local" id="termino" name="termino" value='{{termino}}'><br>
+    <input type="submit" name="btnSubmit" value="atualizar">
+
+</form>

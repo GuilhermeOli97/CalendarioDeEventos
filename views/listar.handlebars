@@ -1,0 +1,22 @@
+<table>
+    <tr>
+        <td>Ação</td>
+        <td>Descrição</td>
+        <td>Data de inicio</td>
+        <td>Data de término</td>
+    </tr>
+
+    {{#evento}}
+        <tr>
+            <td>
+                <a href='atualizar/{{id}}'>atualizar</a>
+                <a href='deletar/{{id}}' class='deletar'>deletar</a>
+
+            </td>
+            <td>{{descricao}}</td>
+            <td>{{inicio}}</td>
+            <td>{{termino}}</td>
+        </tr>
+    {{/evento}}    
+
+</table>

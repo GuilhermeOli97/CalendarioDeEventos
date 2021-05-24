@@ -1,3 +1,15 @@
-<h1>CRUD NODEJS</h1>
-<a href='cadastrar'>Novo evento</a>
-<a href='listar'>Listar eventos</a>
+<nav>
+      <h4>Calendário de eventos!</h4>
+</nav>
+<body>
+    <div class="buttons">
+        <a href='cadastrar'>Novo evento</a>
+        <a href='listar'>Listar eventos</a>
+    </div>
+    {{#if message}}
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}   
+</body>
+
+
+ 

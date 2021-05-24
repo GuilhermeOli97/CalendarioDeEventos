@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <nav>
+      <h4>Calendário de eventos!</h4>
+      <ul>
+        <li><a href="/login">Logar</a></li>
+        <li><a href="/registrar">Registrar</a></li>
+      </ul>
+    </nav>
+
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-header">Formulário de Cadastro</div>
+        <div class="card-body">
+          <form method="post">
+            <div class="mb-3">
+              <label for="usuario" class="form-label">Usuario</label>
+              <input
+                type="text"
+                class="form-control"
+                id="usuario"
+                name="usuario"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="senha" class="form-label">Senha</label>
+              <input
+                type="password"
+                class="form-control"
+                id="senha"
+                name="senha"
+              />
+            </div>
+
+            <button type="submit" formaction="/controllerLogin" class="btn btn-primary">
+              Logar
+            </button>
+            <button
+              type="submit"
+              formaction="/controllerCadastroUsuario"
+              class="btn btn-primary"
+            >
+              Cadastrar
+            </button>
+          </form>
+
+          {{#if message}}
+            <h4 class="alert alert-danger mt-4">{{message}}</h4>
+          {{/if}} 
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -28,6 +28,13 @@ app.use('/', require('./routes/pages'));
 
 
 app.post("/controllerForm",urlencodeParser,function(req,res){
+    const inicio = new Date(req.body.inicio);
+    const termino = new Date(req.body.termino);
+    if(inicio.getTime() > termino.getTime()){
+        return res.render('cadastrar',{
+            message: "A data de término deve ser posterior a data de início do evento"
+        })
+    }
     sql.query("insert into evento (inicio,termino,descricao) values(?,?,?)",[req.body.inicio, req.body.termino, req.body.descricao]);
     res.render('controllerForm', {desc: req.body.descricao});
 })
@@ -42,12 +49,18 @@ app.post("/controllerCadastroUsuario",urlencodeParser,function(req,res){
     sql.query("SELECT usuario from usuarios WHERE usuario = ?", [req.body.usuario], async (error, results) => {
         if(error){
             console.log(error);
-        }    
+        } 
+        if((!req.body.usuario) || (!req.body.senha)){
+            return res.render('login',{
+                message: "Preencha usuário e senha para realizar o cadastrar"
+            })
+        }  
         if(results.length > 0){
             return res.render('login',{
                 message: "usuário já está em uso"
             })
         }
+        
         let hashedPassword = await bcrypt.hash(req.body.senha, 8);
         console.log(hashedPassword);
         

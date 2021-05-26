@@ -24,6 +24,10 @@ router.get('/cadastrar',(req,res)=>{
 
 router.get("/listar",function(req,res){
     sql.query("select * from evento", function(err, results, fields){
+        for(let i=0; i<results.length; i++){
+            results[i].inicio = results[i].inicio.toLocaleString();
+            results[i].termino = results[i].termino.toLocaleString();
+        }
         res.render('listar',{evento:results});
     })
 });

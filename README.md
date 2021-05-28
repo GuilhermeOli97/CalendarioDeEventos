@@ -31,13 +31,13 @@ node app.js
 Acesse a url http://localhost:3000/ em seu navegador.
 
 ## Ferramentas usadas
-*express Framework para construção do servidor
+* [express](https://expressjs.com/pt-br/) Framework para construção do servidor
 
-*[handlebars](https://handlebarsjs.com/) Geração dinâmica de Html
+* [handlebars](https://handlebarsjs.com/) Geração dinâmica de Html
 
-*[bootstrap]https://getbootstrap.com/ Framework CSS
+* [bootstrap]https://getbootstrap.com/ Framework CSS
 
-##Autor
+## Autor
 [Guilherme Oliveira](https://github.com/GuilhermeOli97)
 
 

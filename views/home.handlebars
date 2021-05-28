@@ -1,0 +1,25 @@
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/home.css">
+
+</head>
+<body>
+<nav>
+      <h4>Calendário de eventos</h4>
+      <ul>
+        <li><a href="logout">Sair</a></li>
+        
+      </ul>
+</nav>
+
+    <div class="buttons">
+        <a href='cadastrar'>Novo evento</a>
+        <a href='listar'>Listar eventos</a>
+    </div>
+    {{#if message}}
+        <h4 class="alert alert-danger mt-4">{{message}}</h4>
+    {{/if}}   
+</body>
+
+
+ 

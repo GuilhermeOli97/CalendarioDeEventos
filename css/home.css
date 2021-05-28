@@ -1,0 +1,40 @@
+body {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: #15467e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 28px 40px 28px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+}
+
+nav li a:hover {
+  color: yellow;
+}
+
+.buttons {
+  margin-top: 50px;
+}
+
+.buttons a:hover {
+  color: yellow;
+}

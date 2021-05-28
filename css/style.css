@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+nav {
+  background-color: #15467e;
+  color: #fff;
+  padding: 28px 40px 28px;
+}
+
+nav h4 {
+  font-size: calc(1.275rem + 0.3vw);
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 14px 25px;
+  background-color: #15467e;
+  font-size: 20px;
+
+  margin-top: 100px;
+}

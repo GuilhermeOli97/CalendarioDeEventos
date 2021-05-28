@@ -35,7 +35,7 @@ Acesse a url http://localhost:3000/ em seu navegador.
 
 * [handlebars](https://handlebarsjs.com/) Geração dinâmica de Html
 
-* [bootstrap]https://getbootstrap.com/ Framework CSS
+* [bootstrap](https://getbootstrap.com/) Framework CSS
 
 ## Autor
 [Guilherme Oliveira](https://github.com/GuilhermeOli97)

@@ -7,15 +7,15 @@ Siga as instruções para executar uma cópia do projeto em sua máquina.
 * [MySQL](https://dev.mysql.com/downloads/mysql/)
 * [Nodejs e NPM](https://nodejs.org/)
 
-##Clone o projeto
+## Clone o projeto
 ```
 $ git clone https://github.com/GuilhermeOli97/CalendarioDeEventos
 ```
-##Banco de Dados
+## Banco de Dados
 ```
 Execute o script de criação do banco de dados mysql, que se encontra na pasta raiz do projeto, com o nome db.sql
 ```
-##Dependências
+## Dependências
 Acesse a pasta raiz do projeto através do prompt de comando: 
 ```
 cd "diretório em que se encontra a pasta raiz"
